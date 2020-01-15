@@ -59,7 +59,7 @@ var footballers = [
 // 5. make this loop print to 100.
 for (let i = 0; i < 100; i++) {
   console.log("\u{2708}", i);
-  if (i > 10) {
+  if (i > 100) {
     break;
   }
 }

@@ -131,7 +131,13 @@ var footballers = [
   "Virgil van Dijk"
 ];
 
+// answer on part one 
+console.log(footballers.length);//10
 
-
+for (var i = 0; i <= footballers.length; i++) {
+  if (footballers[i] === footballers[1]) {
+    console.log(footballers[1]);
+  }
+};
 
 
