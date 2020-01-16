@@ -36,7 +36,6 @@ for(var i=0;) <= books.length; i++) {
 // replace varToPrintBookName with the correct code to print a book name.
 console.log("I would like to read: " + books[1]);
 
-
 // 2. Look at the psuedocode below and convert it to CODE,
 // build a switch statement to make sure it prints the correct log based on condition comparison
 // variables and compare strings strings.
@@ -44,41 +43,38 @@ var bigMacBurger;
 var burgerKing;
 var pizzaHut;
 
+bigMacBurger = "Big Mac Burger";
+burgerKing = "Double Whopper";
+pizzaHut = "Pepperoni Pizza";
 
-
-bigMacBurger =  "Big Mac Burger";
-burgerKing =  "Double Whopper";
-pizzaHut ="Pepperoni Pizza";
-
-if (bigMacBurger){
+if (bigMacBurger !== "Big Mac Burger") {
   console.log("Big Mac Burger");
-}
-else if(burgerKing){
+} else if (burgerKing === "Double Whopper") {
   console.log("eating a burgerKing burger");
-}
-else if(pizzaHut){
+} else if (pizzaHut === "Pepperoni Pizza") {
   console.log("Pepperoni Pizza");
-}
-else{
+} else {
   console.log("not hungry at the moment");
 }
 
+// switch
 
-// switch 
-var menu= burgerKing;
+var menu = pizzaHut;
 
-
-
-switch(menu){
-  case "Big Mac Burger" :
+switch (menu) {
+  case "Big Mac Burger":
     console.log("eating a McDonald's Big Mac" + bigMacBurger);
-    break
+    break;
   case "Double Whopper":
     console.log("eating a burgerKing burger");
+    break;
   case "Pepperoni Pizza":
-    default:
-      console.log("not hungry at the moment");
-    }
+    console.log("eating a pizza");
+    break;
+  default:
+    console.log("not hungry at the moment");
+}
+
 /* 
  "Big Mac Burger"
  "Double Whopper"
@@ -94,7 +90,6 @@ switch(menu){
    console.log("eating a Pizza");
 */
 
-
 // 3. Use string concatenation to create these names with variables, and the + operator
 /*
     Virgil van Dijk (Liverpool/Netherlands)
@@ -105,17 +100,17 @@ switch(menu){
     Cristiano Ronaldo (Juventus/Portugal)
 */
 
-var players1 = "Virgil van Dijk (Liverpool/Netherlands)" ;
-var players2 = "Bernardo Silva (Man City/Portugal)"
-var players3 = "Heung-min Son (Tottenham/South Korea)"
-var players4 = "Robert Lewandowski (Bayern Munich/Poland)"
-var players5 = "Robert Lewandowski (Bayern Munich/Poland)"
-var players6 = "Cristiano Ronaldo (Juventus/Portugal)"
+var players1 = "Virgil van Dijk (Liverpool/Netherlands)";
+var players2 = "Bernardo Silva (Man City/Portugal)";
+var players3 = "Heung-min Son (Tottenham/South Korea)";
+var players4 = "Robert Lewandowski (Bayern Munich/Poland)";
+var players5 = "Robert Lewandowski (Bayern Munich/Poland)";
+var players6 = "Cristiano Ronaldo (Juventus/Portugal)";
 
 // joing the string values ti variabel
 
 var player = players1 + players2 + players3 + players4 + players5 + players6;
-console.log (player);
+console.log(player);
 
 // 4. get the length of the array, use a for loop to print out who you think is best footballer.
 var footballers = [
@@ -131,15 +126,47 @@ var footballers = [
   "Virgil van Dijk"
 ];
 
+for (var i = 0; i <= footballers.length; i++) {
+  if (footballers[i] === footballers[1]) {
+    console.log(footballers[1]);
+  }
+}
 
 // 5. make this loop print to 100.
 for (let i = 0; i < 100; i++) {
   console.log("\u{2708}", i);
-  if (i > 10) {
+  if (i === 100) {
     break;
   }
 }
 
+// 6. get the length of the array, use a for loop to print all the players names.
+var footballers = [
+  "Bernardo Silva",
+  "Cristiano Ronaldo",
+  "João Félix",
+  "Karim Benzema",
+  "Lionel Messi",
+  "Pierre-Emerick Aubameyang",
+  "Robert Lewandowski",
+  "Roberto Firmino",
+  "Sergio Agüero",
+  "Virgil van Dijk"
+];
 
+// answer
 
+footballers.length; //10
 
+for (var i = 0; i <= footballers.length; i++) {
+  console.log(footballers[i]);
+}
+
+/* 7. 
+     1. Create variables to illustrate breakfast, lunch, dinner. 
+     2. then write if else if else if else block to check the conditions of the time of day (morning, midday, evening), 
+        if it morning log "I am eating breakfast"
+        if it is midday log "I am eating lunch"
+        if it is evening log "I am eating dinner"
+      3. use variables and string concatenation to print the variables in
+  */
